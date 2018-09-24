@@ -17,6 +17,6 @@ public class Main {
 
     @Bean
     RouterFunction<ServerResponse> staticResourceRouter() {
-        return RouterFunctions.resources("/**", new ClassPathResource("static/"));
+        return RouterFunctions.resources("/**.html", new ClassPathResource("static/"));
     }
 }
